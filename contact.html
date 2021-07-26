@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jaq1lzg.css">
+    <title>Sherwood Park Yards | Contact </title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="shownav">
+            <img src="nav.png" onclick="nav()">
+        </div>
+        <div id="ximg">
+            <img src="x.png" onclick="closeNav()">
+        </div>
+        <div id="navbar">
+            <br><br><br><br><br><br><br><br>
+                    <a href="index.html">HOME</a>
+                    <br>
+                    <a href="contact.html">CONTACT US</a>
+                    <br>
+                    <a href="schedule.html">SCHEDULE SERVICES</a>
+                    <br>
+                    <a href="#">LEAVE A REVIEW</a>
+                    <br>
+                    <a href="#">PRICING</a>
+                    <br>
+  
+        </div>
+        <div id="topnav">
+            <p>
+                <br><br>
+            <a href="index.html">HOME</a>
+            <a href="contact.html">CONTACT US</a>
+            <a href="schedule.html">SCHEDULE SERVICES</a>
+            <a href="#">LEAVE A REVIEW</a>
+            <a href="#">PRICING</a>
+        </p>
+        </div>
+        <div class="contactus">
+            <form>
+                <input type="email" placeholder="Your Email...">
+                <br>
+                <textarea placeholder="Your Message..."></textarea>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function nav() {
+            var navbar = document.getElementById("navbar");
+    
+            var topnav = document.getElementById("topnav");
+    
+            var shownav = document.getElementById("shownav");
+    
+            var x = document.getElementById("ximg");
+    
+            x.style.display = "block";
+    
+            shownav.style.display = "none";
+    
+            topnav.style.display = "none";
+    
+            navbar.style.display = "block";
+        }
+    
+        function closeNav() {
+            var navbar = document.getElementById("navbar");
+    
+            var topnav = document.getElementById("topnav");
+    
+            var shownav = document.getElementById("shownav");
+    
+            var x = document.getElementById("ximg");
+    
+            x.style.display = "none";
+    
+            shownav.style.display = "block";
+    
+            topnav.style.display = "block";
+    
+            navbar.style.display = "none";
+        }
+    
+    var navbar = document.getElementById("navbar");
+    
+    var topnav = document.getElementById("topnav");
+    
+    var shownav = document.getElementById("shownav");
+    
+    var x = document.getElementById("ximg");
+    
+        function myFunction(x) {
+      if (x.matches) { 
+        shownav.style.display = "block";
+      } else {
+        shownav.style.display = "none";
+      }
+    }
+    
+    var x = window.matchMedia("(max-width: 950px)")
+    myFunction(x) 
+    x.addListener(myFunction) 
+    </script>
+</body>
+</html>
